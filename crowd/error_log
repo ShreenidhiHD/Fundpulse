@@ -1,0 +1,10 @@
+[21-May-2023 13:06:30 UTC] PHP Fatal error:  Uncaught ErrorException: proc_get_status() has been disabled for security reasons in /home/squbegr1/crowd.squbegroups.com/vendor/symfony/process/Process.php:1356
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'proc_get_status...', '/home/squbegr1/...', 1356, Array)
+#1 /home/squbegr1/crowd.squbegroups.com/vendor/symfony/process/Process.php(1356): proc_get_status(Resource id #490)
+#2 /home/squbegr1/crowd.squbegroups.com/vendor/symfony/process/Process.php(854): Symfony\Component\Process\Process->updateStatus(false)
+#3 /home/squbegr1/crowd.squbegroups.com/vendor/symfony/process/Process.php(906): Symfony\Component\Process\Process->isRunning()
+#4 /home/squbegr1/crowd.squbegroups.com/vendor/symfony/process/Process.php(203): Symfony\Component\Process\Process->stop(0)
+#5 [internal function]: Symfony\Component\Process\Process->__destruct()
+#6 {main}
+  thrown in /home/squbegr1/crowd.squbegroups.com/vendor/symfony/process/Process.php on line 1356
